@@ -207,10 +207,7 @@ h1 {
   font-family: "Chewy", system-ui;
   letter-spacing: 2px;
   font-size: 34px;
-
   width: auto;
-
-  -webkit-backdrop-filter: blur(30px);
 }
 
 .cap button {
