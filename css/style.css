@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -8,10 +8,11 @@ html {
 }
 
 .logo-txt {
-  font-size: 1.3rem;
+  font-size: 3rem;
   position: relative;
   align-self: center;
   margin-left: 10px;
+  padding-top: 7px;
 }
 
 @font-face {
@@ -88,9 +89,6 @@ h4 {
   width: auto;
 }
 
-.roadmap {
-}
-
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
@@ -116,9 +114,9 @@ h1 {
   margin-right: 30px;
   text-align: justify;
   text-shadow: 0 0 5px rgb(255 188 55);
-  font-family: courage !important;
   letter-spacing: 1px;
   color: rgb(0, 0, 0);
+  font-family: "Chewy", system-ui;
 }
 
 .aboutspan {
@@ -198,15 +196,15 @@ h1 {
   padding: 7px;
   box-shadow: 0 0 40px black;
   -webkit-backdrop-filter: blur(30px);
+  font-family: "Chewy", system-ui;
 }
 .mainh11 {
   /* margin-top: 300px; */
   text-align: center;
   padding-top: 270px;
   padding-bottom: 100px;
-  /* font-family: razorclaw; */
   margin-top: -70px;
-  font-family: courage;
+  font-family: "Chewy", system-ui;
   letter-spacing: 2px;
   font-size: 34px;
 
@@ -383,7 +381,7 @@ h1 {
 .btnclearog {
   font-size: 0.875rem;
   text-decoration: none;
-  font-family: "Bakbak One", cursive;
+  font-family: "Chewy", system-ui;
   color: #fff;
   padding: 0 1.7rem;
   line-height: 50px;
@@ -764,13 +762,19 @@ body {
   background-color: #030303;
 }
 
+.chewy-regular {
+  font-family: "Chewy", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Bakbak One", cursive;
+  font-family: "Chewy", system-ui;
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
@@ -1770,7 +1774,7 @@ ol {
 
 @media (max-width: 575px) {
   .header-wrapper .logo {
-    width: 222px;
+    width: 250px;
   }
 }
 
@@ -1888,7 +1892,7 @@ ol {
   .menu li .submenu li a {
     padding: 10px 15px;
     text-transform: uppercase;
-    font-family: "Bakbak One", cursive;
+    font-family: "Chewy", system-ui;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1931,6 +1935,7 @@ ol {
   font-size: 20px;
   font-weight: lighter;
   text-shadow: 0 0 20px black;
+  font-family: "Chewy", system-ui;
 }
 
 /* headerstyle */
@@ -2330,7 +2335,7 @@ ol {
 
 .banner__content p {
   font-size: 1.125rem;
-  font-family: "Bakbak One", cursive;
+  font-family: "Chewy", system-ui;
   line-height: 1.65;
   max-inline-size: 42ch;
 }
@@ -4331,7 +4336,7 @@ ol {
 .roadmap__item-header p {
   font-size: calc(1.275rem + 0.2571428571vw);
   font-weight: 700;
-  font-family: "Bakbak One", cursive;
+  font-family: "Chewy", system-ui;
   color: #f29318;
 }
 
@@ -5393,6 +5398,31 @@ _:future {
     padding-bottom: 182px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .logo-txt {
+    font-size: 2rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .logo-txt {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .logo {
+    width: 215px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .header-wrapper .logo {
+    width: 210px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .logo-txt {
+    padding-bottom: 10px;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .cap span {
@@ -5404,5 +5434,90 @@ _:future {
     display: inline-block; /* Butonu uygun şekilde hizalar */
     width: 100%; /* Mobil cihazlarda butonu genişletir */
     margin-top: 10px; /* Buton ve üstteki metin arasında boşluk bırakır */
+  }
+}
+.titles {
+  font-family: "Chewy", system-ui !important ;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Space%20Grotesk:700|Space%20Grotesk:400");
+
+:root {
+  /*  change this for scaling  */
+  --m: 4rem;
+
+  --red: #ff6565;
+  --pink: #ff64f9;
+  --purple: #6b5fff;
+  --blue: #4d8aff;
+  --green: #5bff89;
+  --yellow: #ffee55;
+  --orange: #ff6d1b;
+}
+
+.fancy-button {
+  border: calc(0.08 * var(--m)) solid transparent;
+  position: relative;
+  color: #f3f3f3;
+  border-radius: calc(0.7 * var(--m));
+  padding: calc(0.5 * var(--m)) calc(1 * var(--m));
+
+  background: linear-gradient(#121213, #121213),
+    linear-gradient(#121213 50%, rgba(18, 18, 19, 0.6) 80%, rgba(18, 18, 19, 0)),
+    linear-gradient(
+      90deg,
+      var(--orange),
+      var(--yellow),
+      var(--green),
+      var(--blue),
+      var(--purple),
+      var(--pink),
+      var(--red)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box, border-box;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+}
+
+.fancy-button:before {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    var(--orange),
+    var(--yellow),
+    var(--green),
+    var(--blue),
+    var(--purple),
+    var(--pink),
+    var(--red)
+  );
+  height: 30%;
+  width: 60%;
+  position: absolute;
+  bottom: -20%;
+  z-index: -5;
+  background-size: 200%;
+  animation: animate 2s infinite linear;
+  filter: blur(calc(0.8 * var(--m)));
+}
+
+.fancy-button:hover,
+.fancy-button:hover::before {
+  animation: animate 0.5s infinite linear;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --m: 2rem;
   }
 }
