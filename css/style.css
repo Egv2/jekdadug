@@ -5546,26 +5546,37 @@ _:future {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  width: 50px;
+  font-family: "Chewy", system-ui !important ;
   height: 50px;
   line-height: 50px;
   z-index: 9999;
   text-align: center;
+  font-weight: 0;
+  font-size: 12px;
+  color: #000000;
+  background-color: #ffbd37;
+  padding: 10px 30px;
+  border: solid #000000 2px;
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+  border-radius: 50px;
+  transition: 1000ms;
+  transform: translateY(0);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  cursor: pointer;
 }
 .fixed-pancakes:before {
-  content: "";
-  width: 50px;
   height: 50px;
-  background-color: #ffbd37;
   position: absolute;
   border-radius: 100%;
   box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
   z-index: 1;
   top: 0;
   left: 0;
-}
-.fixed-pancakes img {
-  vertical-align: middle;
-  z-index: 2;
-  position: relative;
+  transition: 1000ms;
+  padding: 10px 30px;
+  transform: translateY(-0px);
+  color: #ffbd37;
+  border: solid 2px #000000;
 }
