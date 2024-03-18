@@ -27,12 +27,37 @@
   </head>
 
   <body>
-    <audio
-      src="images/bacon_pancakes.mp3"
-      loop="true"
-      preload="auto"
-      autoplay="true"
-    ></audio>
+    <a
+      class="fixed-pancakes"
+      href="#"
+      onclick="toggleSound(); return false;"
+      rel="nofollow noopener"
+      title="Make Pancakes"
+    >
+      <img src="images/bacon-pancake.png" width="34" height="34" />
+    </a>
+
+    <audio id="pancakes" src="images/bacon_pancakes.mp3"></audio>
+
+    <script>
+      var isPlaying = false;
+
+      function toggleSound() {
+        var sound = document.getElementById("pancakes");
+        if (isPlaying) {
+          sound.pause();
+        } else {
+          sound.play();
+        }
+        isPlaying = !isPlaying;
+      }
+
+      // Ses dosyası bittiğinde, isPlaying'i tekrar false yapmak için
+      document.getElementById("pancakes").onended = function () {
+        isPlaying = false;
+      };
+    </script>
+
     <!-- ========== Multipage Header Section Starts Here========== -->
     <header class="header-section">
       <div class="header-bottom">
