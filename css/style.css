@@ -5449,6 +5449,7 @@ _:future {
 }
 .titles {
   font-family: "Chewy", system-ui !important ;
+  padding-left: 10px;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Space%20Grotesk:700|Space%20Grotesk:400");
@@ -5579,4 +5580,18 @@ _:future {
   transform: translateY(-0px);
   color: #ffbd37;
   border: solid 2px #000000;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1024px) {
+  .lf {
+    right: 276px;
+    top: 150px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 4000px) {
+  .rt {
+    left: 276px;
+    top: 7px;
+  }
 }
