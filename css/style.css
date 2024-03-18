@@ -186,7 +186,6 @@ h1 {
   /* text-align: center; */
   /* padding-top: 100px; */
   /* font-family: razorclaw; */
-  font-family: courage;
   letter-spacing: 2px;
   font-size: 34px;
   text-shadow: 0 0 7px black;
@@ -195,7 +194,6 @@ h1 {
   border-radius: 20px;
   padding: 7px;
   box-shadow: 0 0 40px black;
-  -webkit-backdrop-filter: blur(30px);
   font-family: "Chewy", system-ui;
 }
 .mainh11 {
@@ -238,9 +236,12 @@ h1 {
   box-shadow: 0 0 40px #000000;
 }
 
+.gebes {
+  --bs-gutter-y: 5rem;
+}
+
 @media (max-width: 992px) {
   #home {
-    /* background-image: url("../../pond2.jpg"); */
     /* border-radius: 20px; */
     /* background-color: black; */
     /* background-image: radial-gradient(circle, rgba(0,0,0,0.11257002801120453) 0%, rgb(127, 198, 81) 71%, rgb(127, 198, 81) 100%)
@@ -253,7 +254,7 @@ h1 {
     height: auto;
     width: 100%;
     /* image-rendering: pixelated; */
-    background-position: 50% 50%;
+    background-position: 50% 100%;
     image-rendering: -webkit-optimize-contrast;
   }
   .roadmap {
@@ -386,7 +387,6 @@ h1 {
   transition: all 0.3s ease;
   background: transparent;
   font-weight: bold;
-  text-transform: uppercase;
   font-weight: 400;
   border: 3px solid #fff;
   border-radius: 10px;
@@ -775,7 +775,6 @@ h6 {
   color: #fff;
   line-height: 1.2;
   font-weight: 400;
-  text-transform: uppercase;
 }
 
 h1 {
@@ -1775,11 +1774,11 @@ ol {
   }
 }
 
-@media (max-width: 1199px) and (min-width: 992px) {
+/* @media (max-width: 1199px) and (min-width: 992px) {
   .header-wrapper .logo {
     width: 200px;
   }
-}
+} */
 
 .header-wrapper .menu-area .header-btn {
   column-gap: 20px;
@@ -2309,7 +2308,7 @@ ol {
 
 @media (min-width: 992px) and (max-width: 1399px) {
   .banner__content h1 {
-    font-size: calc(1.53125rem + 2.8928571429vw);
+    font-size: 35px;
   }
 }
 
@@ -2322,6 +2321,24 @@ ol {
 @media (min-width: 1400px) {
   .banner__content h1 {
     max-inline-size: 90%;
+  }
+}
+
+@media (max-width: 375px) {
+  .mainh11 {
+    padding-top: 165px;
+  }
+}
+
+@media (max-width: 425px) {
+  .mainh11 {
+    padding-top: 248px;
+  }
+}
+
+@media (max-width: 390px) {
+  .mainh11 {
+    padding-top: 210px;
   }
 }
 
@@ -2824,7 +2841,6 @@ ol {
 
 .text-btn {
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 .preloader {
@@ -4510,11 +4526,9 @@ ol {
   font-size: calc(1.275rem + 0.2571428571vw);
   background-color: #1d253b;
   color: #22a7f9;
-  font-family: "Bakbak One", cursive;
   font-weight: 400;
   padding: 1.5rem 1rem;
   border: none;
-  text-transform: uppercase;
 }
 
 @media (min-width: 1400px) {
