@@ -5521,3 +5521,12 @@ _:future {
     --m: 2rem;
   }
 }
+
+#music-player {
+  position: fixed;
+  top: -100px; /* Müzik çaları gizlemek için yukarıda tutun */
+  left: -100px;
+  width: 1px;
+  height: 1px;
+  display: none; /* Müzik çaları gizle */
+}
